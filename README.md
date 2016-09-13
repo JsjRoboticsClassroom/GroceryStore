@@ -7,53 +7,52 @@ All groups will build a class that represents their section of the store. The cl
 Each group will be responsible for the following sections of the store:
 
 #Checkout
-##Instructor - Responsible for collection all information from the Grocery Cart, and displaying it to the customer.
+Instructor - Responsible for collection all information from the Grocery Cart, and displaying it to the customer.
 
 #Bakery
-##Group 1 - Responsible for a medley of cakes, each with various toppings
-Stack<BakedGood>
-Enum Type { Pie, Cake, Brownie}
-BakedGood { enum Type, int slicesPerUnit)
+Group 1 - Responsible for a medley of cakes, each with various toppings
+* Stack of BakedGood
+* Enum Type { Pie, Cake, Brownie}
+* BakedGood { enum Type, int slicesPerUnit)
 
 
-##Butcher
-#Group 2 - Responsible for a selection of meats, and various cuts of each
-Stack<Meats>
-Enum Animal { Cow, Pig, Goat}
-Enum Cut { Flank, Shoulder }
-Meat{ enum Animal, enum Cut}
+#Butcher
+Group 2 - Responsible for a selection of meats, and various cuts of each
+* Stack of Meat
+* Enum Animal { Cow, Pig, Goat}
+* Enum Cut { Flank, Shoulder }
+* Meat{ enum Animal, enum Cut}
 
-##Cold Case
-#Group 3 - Responsible for an assortment of lunch meats, each with a suggested recipe and ingredients list
-Stack<ChilledItem>
-Enum Type { Drink, Snack}
-BakedGood { enum Type, int temp)
+#Cold Case
+Group 3 - Responsible for an assortment of lunch meats, each with a suggested recipe and ingredients list
+* Stack of ChilledItem
+* Enum Type { Drink, Snack}
+* ChilledItem { enum Type, int temp)
 
+#Hot Bar
+Group 4 - Responsible for variety of prepared meals, each with a weight, and price per unit
+* Stack of HotFood
+* Enum Type { Sweet, Savory, Spicy}
+* HotFood { enum Type, int servesHowMany)
 
-##Hot Bar
-#Group 4 - Responsible for variety of prepared meals, each with a weight, and price per unit
-Stack<HotFood>
-Enum Type { Sweet, Savory, Spicy}
-BakedGood { enum Type, int servesHowMany)
+#Pizzeria
+Group 5 - Responsible for several prepared pizzas, each with a fixed amount available and price per slice
+* Stack of PizzaSlice
+* Enum Type { Pepperoni, Sausage, Cheese}
+* Enum Crust { Thin, Regular, Cheese }
+* PizzaSlice { enum Type, enum Crust)
 
-##Pizzeria
-#Group 5 - Responsible for several prepared pizzas, each with a fixed amount available and price per slice
-Stack<PizzaSlice>
-Enum Type { Pepperoni, Sausage, Cheese}
-Enum Crust { Thin, Regular, Cheese }
-BakedGood { enum Type, enum Crust)
+#Frozen Food Aisle
+Group 6 - Responsible for a diverse array of frozen food items
+* Stack of FrozenFood
+* Enum Appliance { microwave, toaster oven}
+* FrozenFood{ enum Appliance, int Time }
 
-##Frozen Food Aisle
-#Group 6 - Responsible for a diverse array of frozen food items
-Stack<FrozenFood>
-Enum Appliance { microwave, toaster oven}
-FrozenFood{ enum Appliance, int Time }
-
-##Sushi
-#Group 7 - Responsible for an amalgamation of prepared sushi rolls, each with an fixed amount available and price per roll.
-Stack<SushiRoll>
-Enum Type { Salmon, Tuna,  Snapper}
-Enum Sauce { Wasabi, Soy }
-FrozenFood{ enum Type, enum Sauce }
+#Sushi
+Group 7 - Responsible for an amalgamation of prepared sushi rolls, each with an fixed amount available and price per roll.
+* Stack of SushiRoll
+* Enum Type { Salmon, Tuna,  Snapper}
+* Enum Sauce { Wasabi, Soy }
+* SushiRoll{ enum Type, enum Sauce }
 
 
