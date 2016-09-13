@@ -56,3 +56,9 @@ Group 7 - Responsible for an amalgamation of prepared sushi rolls, each with an 
 * SushiRoll{ enum Type, enum Sauce }
 
 
+#Bagels
+Group 8 - Responsible for hot Bagels
+* Stack of Bagel
+* Enum Browning { Light, Dark, Burnt}
+* enum Spreads {Cream cheese, jelly, butter, Cheese}
+* Bagel { enum Browning, enum Spreads}
