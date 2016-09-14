@@ -11,4 +11,5 @@ public interface GroceryStore {
     void sendToHotBar(List<Customer> customers);
     void sendToPizzeria(List<Customer> customers);
     void sendToSushi(List<Customer> customers);
+    void sendToBagelCounter(List<Customer> customers);
 }
