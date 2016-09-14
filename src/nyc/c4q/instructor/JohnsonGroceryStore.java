@@ -14,6 +14,8 @@ import nyc.c4q.group6.FrozenFood;
 import nyc.c4q.group6.PopUpStation;
 import nyc.c4q.group7.Sushi;
 import nyc.c4q.group7.SushiRoll;
+import nyc.c4q.group8.Bagel;
+import nyc.c4q.group8.BagelOrder;
 
 import java.util.List;
 
@@ -26,6 +28,7 @@ public class JohnsonGroceryStore implements GroceryStore {
     private HotBar<HotFood> mHotBar;
     private Pizzeria<PizzaSlice> mPizzeria;
     private Sushi<SushiRoll> mSushi;
+    private BagelOrder<Bagel> mBagel;
 
     @Override
     public void acceptCustomers(List<Customer> customers) {
@@ -65,5 +68,10 @@ public class JohnsonGroceryStore implements GroceryStore {
     @Override
     public void sendToSushi(List<Customer> customers) {
         mSushi.acceptCustomers(customers);
+    }
+
+    @Override
+    public void sendToBagelCounter(List<Customer> customers) {
+        mBagel.acceptCustomers(customers);
     }
 }
