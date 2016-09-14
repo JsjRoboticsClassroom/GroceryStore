@@ -10,4 +10,5 @@ public interface Butcher<T> {
     void acceptCustomers(List<Customer> customers);
     Map<T,String> getMenu();
     Stack<T> getCurrentSelection();
+
 }
