@@ -4,6 +4,6 @@ public class PlainBagel extends Bagel {
 
     //
     public PlainBagel() {
-        super(Browning.Dark, Spreads.jelly);
+        super(Browning.DARK, Spreads.JELLY);
     }
 }
