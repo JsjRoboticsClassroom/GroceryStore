@@ -7,7 +7,11 @@ import java.util.Map;
 import java.util.Stack;
 
 public interface HotBar<T> {
+
     void acceptCustomers(List<Customer> customers);
+
     Map<T,String> getMenu();
+
     Stack<T> getCurrentSelection();
+
 }
