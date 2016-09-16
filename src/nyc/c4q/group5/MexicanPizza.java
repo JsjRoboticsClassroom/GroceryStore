@@ -6,6 +6,6 @@ package nyc.c4q.group5;
 public class MexicanPizza extends PizzaSlice{
 
   public MexicanPizza() {
-    super(EnumType.PEPPERONI, EnumCrust.CHEESE);
+    super(Type.PEPPERONI, Crust.CHEESE);
   }
 }
