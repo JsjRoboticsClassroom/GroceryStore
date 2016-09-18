@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_height="10dp"
+        android:layout_width="match_parent"
+        android:background="#FF668810"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Johnson's Grocery!"
+        android:textSize="40sp"
+        android:gravity="center"/>
+    <View
+        android:layout_height="10dp"
+        android:layout_width="match_parent"
+        android:background="#FF668810"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text="Come spend your money here!"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF0000"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF0000FF"/>
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Store"/>
+
+
+</LinearLayout>

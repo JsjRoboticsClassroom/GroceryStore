@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation ="vertical"
+    android:background="#FF1493"
+    android:paddingRight ="20dp"
+    android:paddingLeft = "20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Frozen Foods"
+        android:paddingLeft="40dp"
+        android:textColor="#88E0D0"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#FF0000FF"
+        android:paddingTop="40dp"
+        android:text="Pick a Food"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation = "horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Bagel Bites"
+            android:onClick="selfDestruct" />
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="pizza rolls"
+            android:onClick="selfDestruct" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "pizza rolls"
+            android:onClick="selfDestruct"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight ="20dp"
+        android:paddingLeft ="20dp"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textSize="30sp"
+            android:text = "checkout"
+            android:background="#5F9EA0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text = "cart"
+            android:layout_marginLeft="60dp"
+            android:background="#F0FFFF"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
