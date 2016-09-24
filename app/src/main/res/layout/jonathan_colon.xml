@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/eyes">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_below="@+id/nickname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World! My name is Jonathan Colon, and I&apos;m from the Lower East Side! I really don&apos;t know how I ended up in a butcher shop, but it&apos;s cool for now."
+            android:background="#FFFFFF"
+            android:id="@+id/bio"
+            android:paddingTop="15dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_below="@+id/nickname"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/imageView"
+            android:textSize="20sp"
+            android:gravity="left" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/eightbit"
+            android:layout_gravity="bottom|center_horizontal" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profilepicture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/firstname_lastname"
+        android:id="@+id/name"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#e91e63"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/j0natr0n"
+        android:id="@+id/nickname"
+        android:textColor="#ff5722"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
