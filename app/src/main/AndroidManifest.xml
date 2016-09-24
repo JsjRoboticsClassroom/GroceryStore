@@ -19,6 +19,7 @@
         <activity android:name=".coldCase.TenBelow"/>
         <activity android:name=".freezer.FroZone" />
         <activity android:name=".hotBar.HotMeat"/>
+        <activity android:name=".hotBar.HotMenu"/>
         <activity android:name=".pizzaShop.JohnsonsPizzeria"/>
         <activity android:name=".sushiShop.SushiYa"/>
         <activity android:name=".bagleShop.Bagels"/>
