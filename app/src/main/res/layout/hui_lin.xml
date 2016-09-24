@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/snowdays"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/snowdays" />
+        <ImageView
+            android:id="@+id/matcha"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/snowdays"
+            android:layout_toEndOf="@id/snowdays"
+            android:layout_margin="10dp"
+            android:src="@drawable/matchalatte" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi I'm Lily"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or Hui, I like both names."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/cutedesserts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I love desserts!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/christmaslily" />
+
+
+</LinearLayout>
