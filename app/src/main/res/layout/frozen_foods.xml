@@ -3,54 +3,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation ="vertical"
-    android:background="#FF1493"
+    android:background="@drawable/freezer"
     android:paddingRight ="20dp"
-    android:paddingLeft = "20dp">
+    android:paddingLeft="10dp"
+    >
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="50sp"-->
+        <!--android:text="Frozen Foods"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#0067B5"-->
+        <!--android:layout_gravity="center" />-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frozenfoods2"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="Frozen Foods"
-        android:paddingLeft="40dp"
-        android:textColor="#88E0D0"
-        android:layout_gravity="center_vertical" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:textColor="#FF0000FF"
-        android:paddingTop="40dp"
-        android:text="Pick a Food"/>
+        android:paddingTop="10dp"
+        android:text="Choose one:"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation = "horizontal"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
 
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="Bagel Bites"
-            android:onClick="selfDestruct" />
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="pizza rolls"
-            android:onClick="selfDestruct" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text = "pizza rolls"
-            android:onClick="selfDestruct"/>
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="150dp"
+            android:layout_gravity="left"
+            android:src="@drawable/eggos"
+            android:id="@+id/eggos1"
+             />
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bagelbites1"
+            android:src="@drawable/bagelbites"
+             />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pizzarolls"
+            android:id="@+id/pizzarolls1"
+            />
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation = "horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
 
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="150dp"
+            android:layout_gravity="left"
+            android:src="@drawable/eggos"
+            android:id="@+id/eggos2"
+            />
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bagelbites2"
+            android:src="@drawable/bagelbites"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pizzarolls"
+            android:id="@+id/pizzarolls2"
+           />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation = "horizontal"
+        android:layout_marginTop="10dp">
 
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="150dp"
+            android:layout_gravity="left"
+            android:src="@drawable/eggos"
+            android:id="@+id/eggos3"
+            />
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bagelbites3"
+            android:src="@drawable/bagelbites"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pizzarolls"
+            android:id="@+id/pizzarolls3"
 
+            />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +128,7 @@
         android:orientation="horizontal"
         android:paddingRight ="20dp"
         android:paddingLeft ="20dp"
-        android:layout_marginTop="200dp">
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -66,7 +136,7 @@
             android:layout_marginRight="50dp"
             android:textSize="30sp"
             android:text = "checkout"
-            android:background="#5F9EA0"/>
+            android:background="#755F9EA0"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -74,7 +144,7 @@
             android:textSize="30sp"
             android:text = "cart"
             android:layout_marginLeft="60dp"
-            android:background="#F0FFFF"/>
+            android:background="#755F9EA0" />
 
 
     </LinearLayout>
