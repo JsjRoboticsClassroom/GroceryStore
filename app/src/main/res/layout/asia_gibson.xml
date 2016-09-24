@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:scaleType="centerCrop"
+        android:layout_height="150dp"
+        android:src="@drawable/gears" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_below="@id/image1"
+        android:scaleType="centerCrop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/xbox" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_toRightOf="@id/image1"
+        android:scaleType="centerCrop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/me" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        android:text="Asia Gibson"
+        android:layout_below="@id/image3"
+        android:layout_toRightOf="@id/image2"/>
+
+    <TextView
+
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:text="Aj"
+        android:layout_toRightOf="@id/image2"/>
+
+    <TextView
+
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image2"
+        android:text="I am into video games. The game that got me into Xbox was Gears of War. I want to create a game app. I am in my 20's I am the oldest of 7. My favorite dish is steak mash and some type of green veggies"
+        />
+
+</RelativeLayout>
