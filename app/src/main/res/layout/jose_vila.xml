@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/beachbg">
+    <TextView
+        android:id="@+id/image1"
+        android:background="@drawable/unnamed"
+        android:padding="20dp"
+        android:layout_width="180sp"
+        android:layout_height="180sp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    />
+    <TextView
+        android:id="@+id/image2"
+        android:background="@drawable/bacon"
+        android:padding="20dp"
+        android:layout_width="180sp"
+        android:layout_height="180sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        />
+    <TextView
+        android:id="@+id/nameJDV"
+        android:background="#CCFFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image1"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="Name: Jose Daniel Vila" />
+        />
+    <TextView
+        android:id="@+id/nicknameJDV"
+        android:background="#CCFFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameJDV"
+        android:text="Nickname: Classified"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+    />
+    <TextView
+        android:id="@+id/bioJDV"
+        android:background="#CCFFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nicknameJDV"
+        android:text="Brief Bio:\n\nJava/Android Software Developer, and Employment Specialist for adults on the autism spectrum. I like to go to the beach as often as possible. I enjoy sleeping late, and Nexflix binges. I love my family, puppies, bacon, black coffee, and spa days." />
+    />
+</RelativeLayout>
