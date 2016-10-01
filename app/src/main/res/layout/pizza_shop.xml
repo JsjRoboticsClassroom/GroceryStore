@@ -4,27 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ef5347">
+    android:background="#B71C1C">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:layout_gravity="left"
         android:textAlignment="gravity"
-        android:textSize="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:text="HOME"
-        android:textColor="#1b6396"
+        android:background="@color/colorButton"
+        android:textColor="#000000"
         />
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="205dp"
-        android:textSize="30dp"
+        android:layout_marginLeft="207sp"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:text="LOG IN"
-        android:textColor="#1b6396"
+        android:background="@color/colorButton"
+        android:textColor="#000000"
         />
     </LinearLayout>
     <TextView
@@ -32,14 +37,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="gravity"
-        android:textSize="60dp"
-        android:text="PIZZA"
-        android:textColor="#1b6396"
+        android:textSize="55dp"
+        android:text="@string/title"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textColor="#OOOOOO"
         />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="#ffaa42"
+        android:background="@drawable/pizzaimage"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -48,15 +55,17 @@
         android:textAlignment="gravity"
         android:textSize="30dp"
         android:text="PIZZA"
-        android:textColor="#1b6396"
+        android:textColor="#FFFFFF"
         />
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="gravity"
-        android:textSize="30dp"
-        android:text="ORDER NOW"
-        android:textColor="#1b6396"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/button3"
+        android:background="@color/colorButton"
+        android:textColor="#000000"
         />
 </LinearLayout>

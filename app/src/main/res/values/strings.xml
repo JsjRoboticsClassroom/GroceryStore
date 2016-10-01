@@ -2,4 +2,9 @@
     <string name="app_name">GroceryStore</string>
     <string name="j0natr0n">J0NATR0N</string>
     <string name="firstname_lastname">Jonathan Colon</string>
+    <string name="app_name">MEL's Pizza</string>
+    <string name="title">PIZZA</string>
+    <string name="button1">HOME</string>
+    <string name="button2">LOG IN</string>
+    <string name="button3">ORDER NOW</string>
 </resources>
