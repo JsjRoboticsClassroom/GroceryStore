@@ -3,6 +3,7 @@
     <color name="colorPrimary">#FF4081</color>
     <color name="colorPrimaryDark">#B71C1C</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="andresred">#ea0000</color>
     <color name="grey">#37474F</color>
     <color name="colorButton">#ffc107</color>
     <color name="butcherButtons">#F18D75</color>
