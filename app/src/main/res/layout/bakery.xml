@@ -36,27 +36,27 @@
         <ImageView
             android:clickable="true"
             android:id="@+id/cake"
-            android:src="@drawable/btnCake"
+            android:src="@drawable/btn_cake"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/cupcake"
-            android:src="@drawable/btnCupcake"
+            android:src="@drawable/btn_cupcake"
             android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/brownie"
-            android:src="@drawable/btnBrownie"
+            android:src="@drawable/btn_brownie"
             android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
         <ImageView
             android:id="@+id/pie"
-            android:src="@drawable/btnPie"
+            android:src="@drawable/btnn_pie"
             android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

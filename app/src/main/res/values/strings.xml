@@ -7,4 +7,10 @@
     <string name="button1">HOME</string>
     <string name="button2">LOG IN</string>
     <string name="button3">ORDER NOW</string>
+    <string name="Name">Name: Catherine Wong</string>
+    <string name="Nickname">Nickname: Cat</string>
+    <string name="Location">Location: New York</string>
+    <string name="mealYesterday">What I had for lunch yesterday: steak sandwich</string>
+    <string name="mealToday">What I will have for lunch today: donuts</string>
+    <string name="lastMeal">What I will have as my last meal on Earth: Jonathan\'s Grocery Store</string>
 </resources>

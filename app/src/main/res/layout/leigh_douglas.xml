@@ -55,9 +55,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:layout_gravity="bottom
-        "
-            />
+            android:layout_gravity="bottom"/>
 
         <ImageView
             android:src="@drawable/festival"
