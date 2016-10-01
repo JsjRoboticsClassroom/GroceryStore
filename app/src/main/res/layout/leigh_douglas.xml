@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leigh Douglas"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFD54F"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am 25 years old"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My nickname is Lollypop and I live in brooklyn"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am so excited to work at the grocery store!"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/leighpic"
+            android:layout_gravity="bottom"
+            />
+
+        <ImageView
+            android:src="@drawable/food"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom
+        "
+            />
+
+        <ImageView
+            android:src="@drawable/festival"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom"
+
+            android:id="@+id/imageView4" />
+
+    </LinearLayout>
+
+</LinearLayout>
