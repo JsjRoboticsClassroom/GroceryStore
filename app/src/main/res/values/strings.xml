@@ -13,4 +13,10 @@
     <string name="mealYesterday">What I had for lunch yesterday: steak sandwich</string>
     <string name="mealToday">What I will have for lunch today: donuts</string>
     <string name="lastMeal">What I will have as my last meal on Earth: Jonathan\'s Grocery Store</string>
+    <string name="textviewthree">Name: Jose Gonzalez</string>
+    <string name="textviewfour">Nickname: Joe</string>
+    <string name="textviewfive">Facts: I have a West Highland White Terrier named Bromide</string>
+    <string name="textviewsix">I am an avid record collector and own over 2000 records.</string>
+    <string name="textviewseven">I was born in Washington but moved to Texas when I was 11</string>
+    <string name="textvieweight">I love comedies and my favorite comedian is Norm Macdonald</string>
 </resources>
