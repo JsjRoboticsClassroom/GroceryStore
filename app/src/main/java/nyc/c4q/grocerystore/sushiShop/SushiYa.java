@@ -11,4 +11,8 @@ public class SushiYa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sushi);
     }
+
+
+
+
 }

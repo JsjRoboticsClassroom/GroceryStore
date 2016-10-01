@@ -3,60 +3,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#6f88a5"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:orientation="vertical">
 
     <TextView
 
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingLeft="125dp"
-        android:text="SUSHI"
-        android:textAlignment="center"
-        android:textColor="#FF000000"
-        android:textSize="40sp" />
+        android:gravity="center"
+        android:text="SushiYa"
+        android:background="#FF000000"
+        android:textColor="#FFF"
+        android:textSize="70sp" />
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FISH1" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="LOBSTER"
+        android:background="@drawable/sebastian"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        />
 
     <Button
 
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FISH2" />
-    <!--android:layout_gravity="center_vertical" -->
+        android:layout_height="100dp"
+        android:text="SNAPPER"
+        android:textSize="30sp"
+        android:background="@drawable/snapper"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"/>
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FISH3" />
+        android:layout_height="100dp"
+        android:text="SALMON"
+        android:textSize="30sp"
+        android:background="@drawable/salmon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:background="#FF000000"
+        android:background="#FFFF"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
         android:orientation="horizontal">
 
         <Button
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:text="Previous "
-            android:textColor="#FFFF0000"
+            android:text=" Previous "
+            android:background="#FF000000"
+            android:textColor="#FFF"
             android:textSize="30sp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:text="Next |>"
-            android:textColor="#FFFF0000"
+            android:text= "   Next   "
+            android:background="#FF000000"
+            android:textColor="#FFF"
             android:textSize="30sp" />
 
 
