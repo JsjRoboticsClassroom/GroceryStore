@@ -7,4 +7,8 @@
     <color name="colorButton">#ffc107</color>
     <color name="butcherButtons">#F18D75</color>
     <color name="mycolor">#4a566c</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF4005</color>
+    <color name="blue">#64B5F6</color>
 </resources>
