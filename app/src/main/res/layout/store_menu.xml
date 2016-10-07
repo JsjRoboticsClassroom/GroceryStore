@@ -51,7 +51,7 @@
     <Button
         android:id="@+id/employeeHandbook"
         android:layout_alignParentBottom="true"
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/store_menu_button_size"
         android:layout_height="@dimen/store_menu_button_size" />
 </RelativeLayout>

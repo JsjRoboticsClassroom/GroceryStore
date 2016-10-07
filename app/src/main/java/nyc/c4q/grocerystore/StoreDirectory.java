@@ -95,6 +95,7 @@ public class StoreDirectory extends AppCompatActivity{
     }
 
     private void setupEmployeeHanbook() {
+        mGotoEmployeeHandbook.setText("Employee Handbook");
         mGotoEmployeeHandbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
