@@ -49,7 +49,7 @@
         android:layout_height="@dimen/store_menu_button_size" />
 
     <Button
-        android:id="@+id/exit"
+        android:id="@+id/employeeHandbook"
         android:layout_alignParentBottom="true"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"

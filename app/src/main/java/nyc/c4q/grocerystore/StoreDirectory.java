@@ -27,7 +27,7 @@ public class StoreDirectory extends AppCompatActivity{
     private Button mGotoHotBar;
     private Button mGotoPizzaShop;
     private Button mGotoSushi;
-    private Button mGotoStoreFront;
+    private Button mGotoEmployeeHandbook;
     private List<Button> mNavigationButtons;
 
 
@@ -67,7 +67,7 @@ public class StoreDirectory extends AppCompatActivity{
         mGotoHotBar = (Button) findViewById(R.id.button6);
         mGotoPizzaShop = (Button) findViewById(R.id.button7);
         mGotoSushi = (Button) findViewById(R.id.button8);
-        mGotoStoreFront = (Button) findViewById(R.id.exit);
+        mGotoEmployeeHandbook = (Button) findViewById(R.id.employeeHandbook);
 
         mNavigationButtons = Arrays.asList(
             mGotoBakery,
@@ -90,8 +90,18 @@ public class StoreDirectory extends AppCompatActivity{
             StoreSection section = mStoreSections.get(index);
             button.setOnClickListener(buildClickListener(section));
             button.setText(buttonName);
-
         }
+        setupEmployeeHanbook();
+    }
+
+    private void setupEmployeeHanbook() {
+        mGotoEmployeeHandbook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), EmployeeHandbook.class);
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
 

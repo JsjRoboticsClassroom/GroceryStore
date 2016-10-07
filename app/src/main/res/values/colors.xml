@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF4081</color>
-    <color name="colorPrimaryDark">#B71C1C</color>
-    <color name="colorAccent">#FF4081</color>
+    <!-- JJ's colors -->
+    <color name="colorPrimary">#ff8c1a</color>
+    <color name="colorPrimaryDark">#b35900</color>
+    <color name="colorAccent">#ffb366</color>
+    <!-- End JJ's Colors -->
+
     <color name="andresred">#ea0000</color>
     <color name="grey">#37474F</color>
     <color name="colorButton">#ffc107</color>

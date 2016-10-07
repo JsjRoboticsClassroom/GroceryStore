@@ -13,4 +13,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="flashing_board_text">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
 </resources>
