@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".EmployeeHandbook"/>
+        <activity android:name=".employeeHandbook.EmployeeHandbookActivity"/>
         <activity android:name=".coldCase.TenBelow"/>
         <activity android:name=".freezer.FroZone" />
         <activity android:name=".hotBar.HotMeat"/>

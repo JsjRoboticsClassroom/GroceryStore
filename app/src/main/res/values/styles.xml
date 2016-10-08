@@ -17,4 +17,8 @@
     <style name="flashing_board_text">
         <item name="android:textSize">@dimen/large_text_size</item>
     </style>
+
+    <style name="default_activity">
+        <item name="android:padding">10dp</item>
+    </style>
 </resources>

@@ -13,6 +13,7 @@ import nyc.c4q.grocerystore.bagleShop.Bagels;
 import nyc.c4q.grocerystore.bakery.MilasBakery;
 import nyc.c4q.grocerystore.butcher.GenericsButcherShop;
 import nyc.c4q.grocerystore.coldCase.TenBelow;
+import nyc.c4q.grocerystore.employeeHandbook.EmployeeHandbookActivity;
 import nyc.c4q.grocerystore.freezer.FroZone;
 import nyc.c4q.grocerystore.hotBar.HotMeat;
 import nyc.c4q.grocerystore.pizzaShop.JohnsonsPizzeria;
@@ -99,7 +100,7 @@ public class StoreDirectory extends AppCompatActivity{
         mGotoEmployeeHandbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), EmployeeHandbook.class);
+                Intent intent = new Intent(view.getContext(), EmployeeHandbookActivity.class);
                 view.getContext().startActivity(intent);
             }
         });

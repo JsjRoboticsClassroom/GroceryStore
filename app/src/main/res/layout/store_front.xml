@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    style="@style/default_activity">
     <TextView
         android:id="@+id/welcome_sign"
         android:layout_width="wrap_content"
