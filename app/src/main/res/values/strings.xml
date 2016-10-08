@@ -5,4 +5,24 @@
     <string name="nickname">loco</string>
     <string name="j0natr0n">J0NATR0N</string>
     <string name="firstname_lastname">Jonathan Colon</string>
+    <string name="mels_pizza">MEL\'s Pizza</string>
+    <string name="title">PIZZA</string>
+    <string name="button1">HOME</string>
+    <string name="button2">LOG IN</string>
+    <string name="button3">ORDER NOW</string>
+    <string name="catherine_name">Name: Catherine Wong</string>
+    <string name="catherine_nickname">Nickname: Cat</string>
+    <string name="Location">Location: New York</string>
+    <string name="mealYesterday">What I had for lunch yesterday: steak sandwich</string>
+    <string name="mealToday">What I will have for lunch today: donuts</string>
+    <string name="lastMeal">What I will have as my last meal on Earth: Jonathan\'s Grocery Store</string>
+    <string name="textviewthree">Name: Jose Gonzalez</string>
+    <string name="textviewfour">Nickname: Joe</string>
+    <string name="textviewfive">Facts: I have a West Highland White Terrier named Bromide</string>
+    <string name="textviewsix">I am an avid record collector and own over 2000 records.</string>
+    <string name="textviewseven">I was born in Washington but moved to Texas when I was 11</string>
+    <string name="textvieweight">I love comedies and my favorite comedian is Norm Macdonald</string>
+    <string name="jordans_nickname">Nickname: The World\'s Greatest</string>
+    <string name="Bio">My name is Jordan Smith. I\'m the manager of the freezer section of JJ\'s Grocery Store. Here\'s a picture of a waffle. I like waffles.</string>
+    <string name="jordans_name">Name:Jordan Smith</string>
 </resources>

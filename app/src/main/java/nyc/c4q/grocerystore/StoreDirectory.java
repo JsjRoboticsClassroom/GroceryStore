@@ -13,6 +13,7 @@ import nyc.c4q.grocerystore.bagleShop.Bagels;
 import nyc.c4q.grocerystore.bakery.MilasBakery;
 import nyc.c4q.grocerystore.butcher.GenericsButcherShop;
 import nyc.c4q.grocerystore.coldCase.TenBelow;
+import nyc.c4q.grocerystore.employeeHandbook.EmployeeHandbookActivity;
 import nyc.c4q.grocerystore.freezer.FroZone;
 import nyc.c4q.grocerystore.hotBar.HotMeat;
 import nyc.c4q.grocerystore.pizzaShop.JohnsonsPizzeria;
@@ -27,7 +28,7 @@ public class StoreDirectory extends AppCompatActivity{
     private Button mGotoHotBar;
     private Button mGotoPizzaShop;
     private Button mGotoSushi;
-    private Button mGotoStoreFront;
+    private Button mGotoEmployeeHandbook;
     private List<Button> mNavigationButtons;
 
 
@@ -67,7 +68,7 @@ public class StoreDirectory extends AppCompatActivity{
         mGotoHotBar = (Button) findViewById(R.id.button6);
         mGotoPizzaShop = (Button) findViewById(R.id.button7);
         mGotoSushi = (Button) findViewById(R.id.button8);
-        mGotoStoreFront = (Button) findViewById(R.id.exit);
+        mGotoEmployeeHandbook = (Button) findViewById(R.id.employeeHandbook);
 
         mNavigationButtons = Arrays.asList(
             mGotoBakery,
@@ -90,8 +91,19 @@ public class StoreDirectory extends AppCompatActivity{
             StoreSection section = mStoreSections.get(index);
             button.setOnClickListener(buildClickListener(section));
             button.setText(buttonName);
-
         }
+        setupEmployeeHanbook();
+    }
+
+    private void setupEmployeeHanbook() {
+        mGotoEmployeeHandbook.setText("Employee Handbook");
+        mGotoEmployeeHandbook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), EmployeeHandbookActivity.class);
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
 

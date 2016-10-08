@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!-- JJ's colors -->
+    <color name="colorPrimary">#ff8c1a</color>
+    <color name="colorPrimaryDark">#b35900</color>
+    <color name="colorAccent">#ffb366</color>
+    <!-- End JJ's Colors -->
+
     <color name="andresred">#ea0000</color>
     <color name="grey">#37474F</color>
+    <color name="colorButton">#ffc107</color>
+    <color name="butcherButtons">#F18D75</color>
+    <color name="mycolor">#4a566c</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF4005</color>
+    <color name="blue">#64B5F6</color>
 </resources>
