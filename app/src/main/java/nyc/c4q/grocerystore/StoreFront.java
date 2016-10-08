@@ -55,6 +55,20 @@ public class StoreFront extends AppCompatActivity {
             0xFF996633
     );
 
+    private BroadcastReceiver mFlashingUpdateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals(UPDATE_FLASHING_SIGN_INTENT)){
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        updateFlashingSign();
+                    }
+                });
+            }
+        }
+    };
+
     private Pair<String, String> getRandomNowServingPair(){
 
         String first = getRandomNowServingItem();
@@ -111,27 +125,28 @@ public class StoreFront extends AppCompatActivity {
                 mSlot8
         );
         mBroadcastManager = LocalBroadcastManager.getInstance(this);
+        mEnterButton.setOnClickListener(buildEnterButtonListener());
+
     }
 
-    @Override
-    public void onStart(){
-        super.onStart();
-        mIsRunning = true;
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-        mIsRunning = false;
-    }
 
     @Override
     public void onResume(){
         super.onResume();
-        mEnterButton.setOnClickListener(buildEnterButtonListener());
         updateFlashingSign();
         registerFlashingSignUpdates();
         scheduleFlashUpdate();
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        unregisterFlashingSignUpdates();
+    }
+
+    private void unregisterFlashingSignUpdates() {
+        mIsRunning = false;
+        mBroadcastManager.unregisterReceiver(mFlashingUpdateReceiver);
     }
 
     private void scheduleFlashUpdate() {
@@ -147,19 +162,8 @@ public class StoreFront extends AppCompatActivity {
     }
 
     private void registerFlashingSignUpdates() {
-        mBroadcastManager.registerReceiver(new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                if (intent.getAction().equals(UPDATE_FLASHING_SIGN_INTENT)){
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            updateFlashingSign();
-                        }
-                    });
-                }
-            }
-        }, buildFlashingSignIntentFilter());
+        mIsRunning = true;
+        mBroadcastManager.registerReceiver(mFlashingUpdateReceiver, buildFlashingSignIntentFilter());
 
     }
 
