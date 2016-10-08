@@ -14,6 +14,11 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
     private final View mView;
     private final ImageView mEmployeePic;
     private final TextView mEmployeeName;
+
+    public ImageView mEmployeePic() {
+        return mEmployeePic;
+    }
+
     public EmployeeViewHolder(ViewGroup parent) {
         super(inflateView(parent));
         mView = itemView;
@@ -29,4 +34,19 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
     public void bind(EmployeeDescription employeeDescription) {
         mEmployeeName.setText(employeeDescription.getName());
     }
+
+    public ImageView getmEmployeePic() {
+        return mEmployeePic;
+    }
+
+    public TextView getmEmployeeName() {
+        return mEmployeeName;
+    }
+
+    public View getmView() {
+        return mView;
+    }
+//    public EmployeeViewHolder getContext() {
+//        return
+//    }
 }

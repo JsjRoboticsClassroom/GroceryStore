@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorAccent">
+    android:background="@drawable/cloud_backgrd">
     <ImageView
         android:id="@+id/linkedin"
         android:src="@drawable/linkedin_pic"
@@ -21,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30dp"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/linkedin"
         android:text="Wesnie Marcelin" />
@@ -30,6 +31,7 @@
     android:layout_height="wrap_content"
     android:layout_below="@id/name"
     android:textSize="15dp"
+    android:textColor="@color/white"
     android:text="My name is Wesnie and I'm from Florida.I'm an android developer who enjoys working on projects and learning new things. My favorite color is blue. I would love to travel the world one day. "/>
     <ImageView
         android:id="@+id/travel_pic"
