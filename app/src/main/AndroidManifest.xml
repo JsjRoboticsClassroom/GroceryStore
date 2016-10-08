@@ -8,23 +8,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StoreFront">
+        <activity android:name=".StoreFront"/>
+        <activity android:name=".coldCase.TenBelow" />
+        <activity android:name=".freezer.FroZone" />
+        <activity android:name=".hotBar.HotMeat" />
+        <activity android:name=".pizzaShop.JohnsonsPizzeria" />
+        <activity android:name=".sushiShop.SushiYa" />
+        <activity android:name=".bagleShop.Bagels" />
+        <activity android:name=".bakery.MilasBakery" />
+        <activity android:name=".butcher.GenericsButcherShop" />
+        <activity android:name=".StoreDirectory" />
+        <activity android:name=".AndresFragProfile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".coldCase.TenBelow"/>
-        <activity android:name=".freezer.FroZone" />
-        <activity android:name=".hotBar.HotMeat"/>
-        <activity android:name=".pizzaShop.JohnsonsPizzeria"/>
-        <activity android:name=".sushiShop.SushiYa"/>
-        <activity android:name=".bagleShop.Bagels"/>
-        <activity android:name=".bakery.MilasBakery" />
-        <activity android:name=".butcher.GenericsButcherShop" />
-        <activity android:name=".StoreDirectory"/>
     </application>
 
 </manifest>
