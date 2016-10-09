@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".employeeHandbook.EmployeeHandbookActivity"/>
+        <activity android:name=".employeeHandbook.EmployeeView"/>
         <activity android:name=".coldCase.TenBelow"/>
         <activity android:name=".freezer.FroZone" />
         <activity android:name=".hotBar.HotMeat"/>
