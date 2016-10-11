@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bagel_background_port">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bagel_store_logo_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:text="Choose Your Bagel"
+            android:background="#90CCFFFF" />
+
+        <Button
+            android:id="@+id/browning_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30sp"
+            android:text="Browning"
+            android:textColor="#FFFFFF"
+            android:background="#80000000" />
+
+        <Button
+            android:id="@+id/spread_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Spreads"
+            android:textColor="#FFFFFF"
+            android:background="#80000000" />
+    </LinearLayout>
+
+</LinearLayout>
