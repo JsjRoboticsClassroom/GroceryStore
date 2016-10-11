@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import java.util.Arrays;
 import java.util.List;
 
+import nyc.c4q.grocerystore.R;
+
 
 class EmployeeListAdapter extends RecyclerView.Adapter{
 

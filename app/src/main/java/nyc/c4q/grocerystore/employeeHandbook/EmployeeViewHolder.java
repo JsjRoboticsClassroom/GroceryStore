@@ -1,6 +1,5 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
-import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +20,10 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
         mEmployeePic = (ImageView) mView.findViewById(R.id.employee_image);
         mEmployeeName = (TextView) mView.findViewById(R.id.employee_name);
     }
+
+    /*
+    Advanced question: Do you know why this function must be static???
+     */
     private static View inflateView(ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         return inflater.inflate(R.layout.employee_view_holder, parent, false);
@@ -28,15 +31,12 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(EmployeeDescription employeeDescription) {
         mEmployeeName.setText(employeeDescription.getName());
-        Bitmap bitmap = inflateFromDrawable(employeeDescription.getDrawable());
-        if (bitmap != null){
-            mEmployeePic.setImageBitmap(bitmap);
+        Integer resource = employeeDescription.getImageResource();
+        if (resource != null){
+            mEmployeePic.setImageResource(resource);
         }
     }
 
-    private Bitmap inflateFromDrawable(Integer drawable) {
-        return null;
-    }
 
     public TextView getName(){
         return mEmployeeName;
