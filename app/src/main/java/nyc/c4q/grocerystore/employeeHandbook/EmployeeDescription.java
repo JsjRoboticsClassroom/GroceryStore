@@ -10,4 +10,8 @@ public class EmployeeDescription {
     public String getName() {
         return mName;
     }
+
+    public Integer getDrawable() {
+        return null;
+    }
 }

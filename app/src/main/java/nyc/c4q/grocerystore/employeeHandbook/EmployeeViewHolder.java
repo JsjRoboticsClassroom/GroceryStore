@@ -1,5 +1,6 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
+import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,7 +28,16 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(EmployeeDescription employeeDescription) {
         mEmployeeName.setText(employeeDescription.getName());
+        Bitmap bitmap = inflateFromDrawable(employeeDescription.getDrawable());
+        if (bitmap != null){
+            mEmployeePic.setImageBitmap(bitmap);
+        }
     }
+
+    private Bitmap inflateFromDrawable(Integer drawable) {
+        return null;
+    }
+
     public TextView getName(){
         return mEmployeeName;
     }
