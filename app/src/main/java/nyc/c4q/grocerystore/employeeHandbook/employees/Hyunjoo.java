@@ -1,4 +1,4 @@
-package nyc.c4q.grocerystore.employeeHandbook;
+package nyc.c4q.grocerystore.employeeHandbook.employees;
 
 import android.app.Fragment;
 import android.os.Bundle;

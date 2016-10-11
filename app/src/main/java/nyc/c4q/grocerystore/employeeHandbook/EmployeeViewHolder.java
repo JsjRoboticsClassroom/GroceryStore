@@ -31,4 +31,8 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
     public TextView getName(){
         return mEmployeeName;
     }
+
+    public void setOnClickListener(View.OnClickListener clickListener){
+        mView.setOnClickListener(clickListener);
+    }
 }

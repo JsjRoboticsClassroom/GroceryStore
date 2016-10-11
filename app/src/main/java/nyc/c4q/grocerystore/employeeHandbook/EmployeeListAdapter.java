@@ -1,6 +1,5 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +8,12 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class EmployeeListAdapter extends RecyclerView.Adapter{
+class EmployeeListAdapter extends RecyclerView.Adapter{
 
     private List<EmployeeDescription> mData = Arrays.asList(
-        new EmployeeDescription("Hyunjoo")
+        new EmployeeDescription("Bill"),
+        new EmployeeDescription("Bob"),
+        new EmployeeDescription("Jack")
     );
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -21,17 +22,29 @@ public class EmployeeListAdapter extends RecyclerView.Adapter{
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        ((EmployeeViewHolder) holder).bind(mData.get(position));
-        if(mData.get(position).getName().equals("Hyunjoo")){
-            ((EmployeeViewHolder) holder).getName().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        EmployeeViewHolder viewHolder = (EmployeeViewHolder) holder;
+        EmployeeDescription employee = mData.get(position);
+        viewHolder.bind(employee);
+        viewHolder.setOnClickListener(buildEmployeeClickListener(employee));
+    }
 
-                    Intent intent = new Intent(v.getContext(), EmployeeView.class);
-                    v.getContext().startActivity(intent);
-                }
-            });
+    private View.OnClickListener buildEmployeeClickListener(EmployeeDescription employee) {
+        if (employee != null){
+
         }
+        return defaultClickListener();
+    }
+
+    /*
+     The default click listener does nothing;
+     */
+    private View.OnClickListener defaultClickListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Do Nothing
+            }
+        };
     }
 
     @Override
