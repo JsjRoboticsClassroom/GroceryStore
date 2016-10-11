@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
@@ -21,7 +22,7 @@
         android:gravity="center"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:hint="-------------"/>
+        android:text="-------------"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250sp"
@@ -33,7 +34,7 @@
         android:gravity="center"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:hint="-------------"/>
+        android:text="-------------"/>
     <Button
         android:id="@+id/buttonMenu"
         android:layout_width="200sp"
@@ -43,6 +44,6 @@
         android:textColorHint="#FF3D00"
         android:textSize="20sp"
         android:background="#FAFAFA"
-        android:hint="M E N U"
+        android:text="M E N U"
         android:onClick="toMenu"/>
 </LinearLayout>
