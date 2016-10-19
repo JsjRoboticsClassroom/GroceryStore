@@ -14,7 +14,7 @@ import nyc.c4q.grocerystore.R;
 class EmployeeListAdapter extends RecyclerView.Adapter{
 
     private List<EmployeeDescription> mData = Arrays.asList(
-        new EmployeeDescription("Ashique", R.drawable.myface)
+        new EmployeeDescription("Ashique", R.drawable.ashique)
     );
 
     @Override
@@ -32,18 +32,25 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
 
     private View.OnClickListener buildEmployeeClickListener(EmployeeDescription employee) {
         if (employee != null){
-            switch(employee.getName()){
-                case "Ashique":
-                    return new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(view.getContext(), EmployeeView.class);
-                            view.getContext().startActivity(intent);
-                        }
-                    };
-            }
+            return navigateToEmployeeViewListener(employee.getName());
         }
         return defaultClickListener();
+    }
+
+    /**
+     * This click listener launches an intent with the employee name as an extra
+     * @param name
+     * @return
+     */
+    private View.OnClickListener navigateToEmployeeViewListener(final String name) {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), EmployeeView.class);
+                intent.putExtra(EmployeeView.EMPLOYEE_NAME, name);
+                view.getContext().startActivity(intent);
+            }
+        };
     }
 
     /*
