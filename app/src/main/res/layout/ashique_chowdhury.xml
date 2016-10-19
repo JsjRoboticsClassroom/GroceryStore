@@ -34,17 +34,6 @@
             android:layout_height="120dp"
             android:src="@drawable/myface"
             android:layout_centerHorizontal="true"/>
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="15dp"
-            android:layout_height="100dp"
-            android:background="@drawable/secondpicture"/>
-        <ImageView
-            android:layout_width="120dp"
-            android:rotation="270"
-            android:layout_height="100dp"
-            android:background="@drawable/thirdpic"/>
     </LinearLayout>
 
     <LinearLayout
