@@ -18,5 +18,6 @@ public class EmployeeHandbookActivity extends AppCompatActivity{
         mRecyclerView = (RecyclerView) findViewById(R.id.employeeList);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
         mRecyclerView.setAdapter(new EmployeeListAdapter());
+
     }
 }
