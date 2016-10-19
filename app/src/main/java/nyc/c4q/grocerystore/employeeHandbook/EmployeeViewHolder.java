@@ -21,9 +21,11 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
         mView = itemView;
         mEmployeePic = (ImageView) mView.findViewById(R.id.employee_image);
         mEmployeeName = (TextView) mView.findViewById(R.id.employee_name);
-
     }
 
+    /*
+    Advanced question: Do you know why this function must be static???
+     */
     private static View inflateView(ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         return inflater.inflate(R.layout.employee_view_holder, parent, false);
@@ -31,6 +33,19 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(EmployeeDescription employeeDescription) {
         mEmployeeName.setText(employeeDescription.getName());
+        Integer resource = employeeDescription.getImageResource();
+        if (resource != null){
+            mEmployeePic.setImageResource(resource);
+        }
+    }
+
+
+    public TextView getName(){
+        return mEmployeeName;
+    }
+
+    public void setOnClickListener(View.OnClickListener clickListener){
+        mView.setOnClickListener(clickListener);
     }
 
     public ImageView getmEmployeePic() {

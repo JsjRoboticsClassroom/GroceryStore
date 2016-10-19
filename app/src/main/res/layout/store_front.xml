@@ -4,15 +4,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/default_activity">
+    style="@style/default_activity"
+    android:background="@color/colorPrimaryLight">
+
+
     <TextView
         android:id="@+id/welcome_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to Johnson's Grocery!"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
         android:layout_centerHorizontal="true"/>
-
     <TextView
         android:id="@+id/tag_line"
         android:layout_width="wrap_content"
@@ -20,28 +24,26 @@
         android:layout_below="@id/welcome_sign"
         android:textSize="@dimen/normal_text_size"
         android:text="Come spend your money here!"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:id="@+id/now_serving"
+    <ImageView
+        android:id="@+id/background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:textSize="@dimen/normal_text_size"
-        android:text="Now Serving"
-        android:layout_alignStart="@id/welcome_sign"
-        android:layout_alignLeft="@id/welcome_sign"
-        android:layout_below="@id/tag_line"/>
+        android:layout_below="@id/tag_line"
+        android:layout_height="300dp"
+        android:src="@drawable/store_front_image"/>
+
 
     <TableLayout
         android:id="@+id/flashing_board_holder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/now_serving"
-        android:layout_alignLeft="@id/now_serving"
-        android:layout_alignStart="@id/now_serving"
-        android:layout_alignRight="@id/welcome_sign"
-        android:layout_alignEnd="@id/welcome_sign"
+        android:layout_below="@id/background"
+        android:layout_alignLeft="@id/background"
+        android:layout_alignStart="@id/background"
+        android:layout_alignRight="@id/background"
+        android:layout_alignEnd="@id/background"
         android:stretchColumns="*">
         <TableRow
             android:layout_width="match_parent"
@@ -54,6 +56,7 @@
             <TextView
                 android:id="@+id/flashing_board_slot2"
                 android:layout_width="@dimen/flashing_board_item_width"
+                android:layout_gravity="right"
                 android:layout_height="match_parent"
                 style="@style/flashing_board_text"/>
         </TableRow>
@@ -68,6 +71,7 @@
             <TextView
                 android:id="@+id/flashing_board_slot4"
                 android:layout_width="@dimen/flashing_board_item_width"
+                android:layout_gravity="right"
                 android:layout_height="match_parent"
                 style="@style/flashing_board_text"/>
         </TableRow>
@@ -82,6 +86,7 @@
             <TextView
                 android:id="@+id/flashing_board_slot6"
                 android:layout_width="@dimen/flashing_board_item_width"
+                android:layout_gravity="right"
                 android:layout_height="match_parent"
                 style="@style/flashing_board_text"/>
         </TableRow>
@@ -96,6 +101,7 @@
             <TextView
                 android:id="@+id/flashing_board_slot8"
                 android:layout_width="@dimen/flashing_board_item_width"
+                android:layout_gravity="right"
                 android:layout_height="match_parent"
                 style="@style/flashing_board_text"/>
         </TableRow>

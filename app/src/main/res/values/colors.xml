@@ -3,6 +3,7 @@
     <!-- JJ's colors -->
     <color name="colorPrimary">#ff8c1a</color>
     <color name="colorPrimaryDark">#b35900</color>
+    <color name="colorPrimaryLight">#44ff8c1a</color>
     <color name="colorAccent">#ffb366</color>
     <!-- End JJ's Colors -->
 
