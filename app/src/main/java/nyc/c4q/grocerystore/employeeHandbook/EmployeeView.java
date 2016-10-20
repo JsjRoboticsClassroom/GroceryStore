@@ -24,16 +24,23 @@ public class EmployeeView extends AppCompatActivity {
                 case "HuiLily":
                     showHuiLily();
                     break;
-case "Ashique":
+                case "Ashique":
                     showAshique();
                     break;
                 case "Hyunjoo":
                     showHyunjoo();
                     break;
+                case "Helen":
+                    showHelen();
+                    break;
             }
         }
     }
 
+
+    private void showHelen(){
+        getFragmentManager().beginTransaction().add(R.id.employee_profile, new Helen()).commit();
+    }
     private void showAshique(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
