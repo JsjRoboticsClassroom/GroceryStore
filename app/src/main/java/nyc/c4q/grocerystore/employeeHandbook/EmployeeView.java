@@ -10,6 +10,7 @@ import nyc.c4q.grocerystore.R;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Ashique;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
 
 public class EmployeeView extends AppCompatActivity {
     public static final String EMPLOYEE_NAME = "extra.employee.name";
@@ -33,6 +34,10 @@ public class EmployeeView extends AppCompatActivity {
                 case "Helen":
                     showHelen();
                     break;
+                case "Derek":
+                    showDerek();
+                    break;
+
             }
         }
     }
@@ -44,7 +49,7 @@ public class EmployeeView extends AppCompatActivity {
     private void showAshique(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.employee_profile,new Ashique());
+        fragmentTransaction.add(R.id.employee_profile, new Ashique());
         fragmentTransaction.commit();
     }
 
@@ -58,6 +63,13 @@ public class EmployeeView extends AppCompatActivity {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile,new Hyunjoo());
+        fragmentTransaction.commit();
+    }
+
+private void showDerek(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.employee_profile, new Derek());
         fragmentTransaction.commit();
     }
 }
