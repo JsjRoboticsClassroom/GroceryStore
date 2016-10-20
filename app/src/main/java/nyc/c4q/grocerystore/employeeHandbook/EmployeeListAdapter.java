@@ -18,7 +18,8 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
         new EmployeeDescription("HuiLily", R.drawable.huiavatar),
         new EmployeeDescription("Hyunjoo", R.drawable.hyunjoo),
         new EmployeeDescription("Helen", R.drawable.helenprofilepic),
-new EmployeeDescription("Derek", R.drawable.derek)
+new EmployeeDescription("Derek", R.drawable.derek),
+new EmployeeDescription("Danny", R.drawable.danny)
     );
 
     @Override

@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import nyc.c4q.grocerystore.R;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Ashique;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
@@ -21,6 +22,10 @@ public class EmployeeView extends AppCompatActivity {
         setContentView(R.layout.employee_view);
         String employee = getIntent().getStringExtra(EMPLOYEE_NAME);
         if(employee != null){
+            if (employee.equals("Danny")) {
+                showDanny();
+            }
+
             switch (employee) {
                 case "HuiLily":
                     showHuiLily();
@@ -38,7 +43,9 @@ public class EmployeeView extends AppCompatActivity {
                     showDerek();
                     break;
 
+
             }
+
         }
     }
 
@@ -70,6 +77,13 @@ private void showDerek(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.employee_profile, new Derek());
+        fragmentTransaction.commit();
+    }
+
+private void showDanny(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Danny());
         fragmentTransaction.commit();
     }
 }
