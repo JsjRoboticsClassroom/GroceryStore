@@ -21,11 +21,11 @@ public class EmployeeView extends AppCompatActivity {
         if(employee != null){
             // call a function
             switch (employee){
+                case "Ashique":
+                    showAshique();
+                    break;
                 case "Hyunjoo":
-                    FragmentManager fragmentManager = getFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.add(R.id.employee_profile,new Hyunjoo());
-                    fragmentTransaction.commit();
+                    showHyunjoo();
                     break;
             }
         }
@@ -35,6 +35,12 @@ public class EmployeeView extends AppCompatActivity {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile,new Ashique());
+        fragmentTransaction.commit();
+    }
+    private void showHyunjoo(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile,new Hyunjoo());
         fragmentTransaction.commit();
     }
 }
