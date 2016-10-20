@@ -14,7 +14,6 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
     private final View mView;
     private final ImageView mEmployeePic;
     private final TextView mEmployeeName;
-    private String SWAG= "yeeeeeeeeeeer";
 
     public EmployeeViewHolder(ViewGroup parent) {
         super(inflateView(parent));
