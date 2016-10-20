@@ -1,10 +1,12 @@
-package nyc.c4q.grocerystore;
+package nyc.c4q.grocerystore.employeeHandbook.employees;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import nyc.c4q.grocerystore.R;
 
 /**
  * Created by andresarango on 9/27/16.
