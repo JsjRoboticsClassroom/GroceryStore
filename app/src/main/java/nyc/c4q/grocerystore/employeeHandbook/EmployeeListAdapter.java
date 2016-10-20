@@ -1,8 +1,7 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
-import android.app.Activity;
+
 import android.content.Intent;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,22 +9,13 @@ import android.view.ViewGroup;
 import java.util.Arrays;
 import java.util.List;
 
-public class EmployeeListAdapter extends RecyclerView.Adapter {
-    Class<EmployeeViewHolder> context1 = EmployeeViewHolder.class;
+import nyc.c4q.grocerystore.R;
+
+class EmployeeListAdapter extends RecyclerView.Adapter{
+
     private List<EmployeeDescription> mData = Arrays.asList(
-            new EmployeeDescription("Bill"),
-            new EmployeeDescription("Tom"),
-            new EmployeeDescription("Monks"),
-            new EmployeeDescription("Tank"),
-            new EmployeeDescription("Blank"),
-            new EmployeeDescription("Hank"),
-            new EmployeeDescription("Rank"),
-            new EmployeeDescription("Hmm"),
-            new EmployeeDescription("Zmm"),
-            new EmployeeDescription("Bill"),
-            new EmployeeDescription("Nkln"),
-            new EmployeeDescription("dksls"),
-            new EmployeeDescription("Wesnie")
+            new EmployeeDescription("Ashique", R.drawable.ashique),
+            new EmployeeDescription("Wesnie", R.drawable.linkedin_pic)
     );
 
     @Override
@@ -35,39 +25,51 @@ public class EmployeeListAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        //Allows you to have the context that will be necessary to maneuver through activities
-        final EmployeeViewHolder viewHolder = (EmployeeViewHolder) holder;
-        //This binds the view to the current position in the view of the cell phone
-        ((EmployeeViewHolder) holder).bind(mData.get(position));
-        //Boolean that checks to see if the text matches Wesnie
-        boolean oje = ((EmployeeViewHolder) holder).getmEmployeeName().getText().toString().equals("Wesnie");
-        if (oje) {
-            //If the boolean is correct, the Name then becomes clickable and allows user to click and go to next activity
-            ((EmployeeViewHolder) holder).getmEmployeeName().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //The intent takes in this newly constructed context b/c it is unattainable in this method
-                    Intent intent = new Intent(viewHolder.getmView().getContext(), EmployeeView.class);
-                    viewHolder.getmView().getContext().startActivity(intent);
-                }
-            });
-            //On Click Listener for the picture to direct user to next activity
-            ((EmployeeViewHolder) holder).getmEmployeePic().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(viewHolder.getmView().getContext(), EmployeeView.class);
-                    viewHolder.getmView().getContext().startActivity(intent);
-                }
-            });
+        EmployeeViewHolder viewHolder = (EmployeeViewHolder) holder;
+        EmployeeDescription employee = mData.get(position);
+        viewHolder.bind(employee);
+        viewHolder.setOnClickListener(buildEmployeeClickListener(employee));
+    }
+
+    private View.OnClickListener buildEmployeeClickListener(EmployeeDescription employee) {
+        if (employee != null){
+            return navigateToEmployeeViewListener(employee.getName());
         }
+        return defaultClickListener();
+    }
+
+    /**
+     * This click listener launches an intent with the employee name as an extra
+     * @param name
+     * @return
+     */
+    private View.OnClickListener navigateToEmployeeViewListener(final String name) {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), EmployeeView.class);
+                intent.putExtra(EmployeeView.EMPLOYEE_NAME, name);
+                view.getContext().startActivity(intent);
 
 
+            }
+        };
+    }
+
+    /*
+     The default click listener does nothing;
+     */
+    private View.OnClickListener defaultClickListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Do Nothing
+            }
+        };
     }
 
     @Override
     public int getItemCount() {
         return mData.size();
     }
-
-
 }
