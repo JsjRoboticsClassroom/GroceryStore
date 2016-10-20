@@ -13,11 +13,15 @@ import nyc.c4q.grocerystore.R;
 
 class EmployeeListAdapter extends RecyclerView.Adapter{
 
-
     private List<EmployeeDescription> mData = Arrays.asList(
-        new EmployeeDescription("Andres",R.drawable.ajba_profile_pic),
-        new EmployeeDescription("Ashique", R.drawable.ashique)
+        new EmployeeDescription("Ashique", R.drawable.ashique),
+        new EmployeeDescription("HuiLily", R.drawable.huiavatar),
+        new EmployeeDescription("Hyunjoo", R.drawable.hyunjoo),
+        new EmployeeDescription("Helen", R.drawable.helenprofilepic),
+new EmployeeDescription("Derek", R.drawable.derek),
+new EmployeeDescription("Danny", R.drawable.danny)
     );
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new EmployeeViewHolder(parent);
@@ -70,6 +74,4 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
     public int getItemCount() {
         return mData.size();
     }
-
-
 }
