@@ -18,10 +18,23 @@ public class EmployeeView extends AppCompatActivity {
         setContentView(R.layout.employee_view);
         String employee = getIntent().getStringExtra(EMPLOYEE_NAME);
         if(employee != null){
+            switch(employee){
+                case "Ashique":
+                    showAshique();
+                    break;
+                case "Helen":
+                    showHelen();
+                    break;
+
+            }
             // call a function
         }
     }
 
+
+    private void showHelen(){
+        getFragmentManager().beginTransaction().add(R.id.employee_profile, new Helen()).commit();
+    }
     private void showAshique(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
