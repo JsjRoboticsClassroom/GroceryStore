@@ -31,7 +31,7 @@ public class EmployeeView extends AppCompatActivity {
             }
 
             switch (employee) {
-                case "HuiLily":
+                case "Lily":
                     showHuiLily();
                     break;
                 case "Ashique":
@@ -70,10 +70,9 @@ public class EmployeeView extends AppCompatActivity {
     }
 
     private void showHuiLily(){
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.employee_profile,new HuiLily());
-        fragmentTransaction.commit();
+        getFragmentManager().beginTransaction()
+                .add(R.id.employee_profile,new HuiLily())
+                .commit();
     }
     private void showHyunjoo(){
         FragmentManager fragmentManager = getFragmentManager();
