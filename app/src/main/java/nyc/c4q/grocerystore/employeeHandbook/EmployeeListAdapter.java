@@ -1,5 +1,6 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
+
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -10,7 +11,6 @@ import java.util.List;
 
 import nyc.c4q.grocerystore.R;
 
-
 class EmployeeListAdapter extends RecyclerView.Adapter{
 
     private List<EmployeeDescription> mData = Arrays.asList(
@@ -20,7 +20,8 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
         new EmployeeDescription("Helen", R.drawable.helenprofilepic),
         new EmployeeDescription("Derek", R.drawable.derek),
         new EmployeeDescription("Danny", R.drawable.danny),
-        new EmployeeDescription("Rook", R.drawable.rooks)
+        new EmployeeDescription("Rook", R.drawable.rooks),
+        new EmployeeDescription("Wesnie", R.drawable.linkedin_pic)
     );
 
     @Override
@@ -55,6 +56,8 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
                 Intent intent = new Intent(view.getContext(), EmployeeView.class);
                 intent.putExtra(EmployeeView.EMPLOYEE_NAME, name);
                 view.getContext().startActivity(intent);
+
+
             }
         };
     }

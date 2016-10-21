@@ -1,5 +1,6 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import nyc.c4q.grocerystore.R;
+import nyc.c4q.grocerystore.employeeHandbook.EmployeeDescription;
 
 public class EmployeeViewHolder extends RecyclerView.ViewHolder {
     private final View mView;

@@ -1,5 +1,6 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
+
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Wesnie;
 
 public class EmployeeView extends AppCompatActivity {
     public static final String EMPLOYEE_NAME = "extra.employee.name";
@@ -44,8 +46,11 @@ public class EmployeeView extends AppCompatActivity {
                 case "Derek":
                     showDerek();
                     break;
-case "Rook":
+                case "Rook":
                     showRafael();
+                    break;
+                case  "Wesnie":
+                    showWesnie();
                     break;
 
             }
@@ -95,5 +100,12 @@ case "Rook":
         android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile, new Rafael()).commit();
+    }
+
+    private void showWesnie(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Wesnie());
+        fragmentTransaction.commit();
     }
 }
