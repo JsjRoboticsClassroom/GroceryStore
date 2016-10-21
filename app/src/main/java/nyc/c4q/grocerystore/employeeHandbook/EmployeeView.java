@@ -12,6 +12,7 @@ import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
 
 public class EmployeeView extends AppCompatActivity {
     public static final String EMPLOYEE_NAME = "extra.employee.name";
@@ -21,6 +22,7 @@ public class EmployeeView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employee_view);
         String employee = getIntent().getStringExtra(EMPLOYEE_NAME);
+
         if(employee != null){
             if (employee.equals("Danny")) {
                 showDanny();
@@ -42,7 +44,9 @@ public class EmployeeView extends AppCompatActivity {
                 case "Derek":
                     showDerek();
                     break;
-
+case "Rook":
+                    showRafael();
+                    break;
 
             }
 
@@ -73,17 +77,23 @@ public class EmployeeView extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
-private void showDerek(){
+    private void showDerek(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.employee_profile, new Derek());
         fragmentTransaction.commit();
     }
 
-private void showDanny(){
+    private void showDanny(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile, new Danny());
         fragmentTransaction.commit();
+    }
+
+    private void showRafael() {
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Rafael()).commit();
     }
 }
