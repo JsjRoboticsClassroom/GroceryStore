@@ -29,7 +29,6 @@
         <activity android:name=".butcher.GenericsButcherShop"
             android:theme="@style/ButcherShopTheme"/>
         <activity android:name=".StoreDirectory"/>
-        <activity android:name=".employeeHandbook.EmployeeView"/>
     </application>
 
 </manifest>
