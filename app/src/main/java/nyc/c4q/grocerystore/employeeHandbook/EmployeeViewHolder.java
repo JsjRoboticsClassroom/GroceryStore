@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import nyc.c4q.grocerystore.R;
-import nyc.c4q.grocerystore.employeeHandbook.EmployeeDescription;
 
 public class EmployeeViewHolder extends RecyclerView.ViewHolder {
     private final View mView;

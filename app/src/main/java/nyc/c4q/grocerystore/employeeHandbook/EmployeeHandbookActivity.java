@@ -18,7 +18,7 @@ public class EmployeeHandbookActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employee_handbook);
         mRecyclerView = (RecyclerView) findViewById(R.id.employeeList);
-        mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this,3));
         mRecyclerView.setAdapter(new EmployeeListAdapter());
         mEmployeeCount = (TextView) findViewById(R.id.select_an_employee);
         Integer employeeCount = mRecyclerView.getAdapter().getItemCount();

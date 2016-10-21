@@ -4,10 +4,10 @@ package nyc.c4q.grocerystore.employeeHandbook;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import nyc.c4q.grocerystore.R;
+import nyc.c4q.grocerystore.employeeHandbook.employees.AndresFragment;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Ashique;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
@@ -20,7 +20,7 @@ public class EmployeeView extends AppCompatActivity {
     public static final String EMPLOYEE_NAME = "extra.employee.name";
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employee_view);
         String employee = getIntent().getStringExtra(EMPLOYEE_NAME);
@@ -52,10 +52,20 @@ public class EmployeeView extends AppCompatActivity {
                 case  "Wesnie":
                     showWesnie();
                     break;
+                case "Andres":
+                    showAndres();
+                    break;
 
             }
 
         }
+    }
+
+    private void showAndres(){
+        getFragmentManager().
+                beginTransaction().
+                add(R.id.employee_profile, new AndresFragment()).
+                commit();
     }
 
 
