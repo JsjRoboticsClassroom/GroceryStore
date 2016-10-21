@@ -1,5 +1,6 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
+
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Wesnie;
 
 public class EmployeeView extends AppCompatActivity {
     public static final String EMPLOYEE_NAME = "extra.employee.name";
@@ -22,13 +25,14 @@ public class EmployeeView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employee_view);
         String employee = getIntent().getStringExtra(EMPLOYEE_NAME);
+
         if(employee != null){
             if (employee.equals("Danny")) {
                 showDanny();
             }
 
             switch (employee) {
-                case "HuiLily":
+                case "Lily":
                     showHuiLily();
                     break;
                 case "Ashique":
@@ -43,7 +47,14 @@ public class EmployeeView extends AppCompatActivity {
                 case "Derek":
                     showDerek();
                     break;
-
+                case "Rook":
+                    showRafael();
+                    break;
+                case  "Wesnie":
+                    showWesnie();
+                    break;
+                case "Andres":
+                    showAndres();
 
             }
 
@@ -69,10 +80,9 @@ public class EmployeeView extends AppCompatActivity {
     }
 
     private void showHuiLily(){
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.employee_profile,new HuiLily());
-        fragmentTransaction.commit();
+        getFragmentManager().beginTransaction()
+                .add(R.id.employee_profile,new HuiLily())
+                .commit();
     }
     private void showHyunjoo(){
         FragmentManager fragmentManager = getFragmentManager();
@@ -81,17 +91,30 @@ public class EmployeeView extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
-private void showDerek(){
+    private void showDerek(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.employee_profile, new Derek());
         fragmentTransaction.commit();
     }
 
-private void showDanny(){
+    private void showDanny(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile, new Danny());
+        fragmentTransaction.commit();
+    }
+
+    private void showRafael() {
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Rafael()).commit();
+    }
+
+    private void showWesnie(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Wesnie());
         fragmentTransaction.commit();
     }
 }
