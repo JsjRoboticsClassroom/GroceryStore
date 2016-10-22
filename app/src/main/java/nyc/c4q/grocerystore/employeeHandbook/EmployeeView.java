@@ -18,6 +18,7 @@ import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Wesnie;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Jordan;
 import nyc.c4q.grocerystore.employeeHandbook.employees.JoseV;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Mila;
 
 public class EmployeeView extends AppCompatActivity {
     public static final String EMPLOYEE_NAME = "extra.employee.name";
@@ -31,9 +32,12 @@ public class EmployeeView extends AppCompatActivity {
             if (employee.equals("Danny")) {
                 showDanny();
             }
-if (employee.equals("JoseV")){
+            if (employee.equals("JoseV")){
                  showJoseV();
-}
+            }
+            if(employee.equalsIgnoreCase("Mila")){
+                 showMila();
+            }
 
             switch (employee) {
                 case "Lily":
@@ -145,6 +149,13 @@ if (employee.equals("JoseV")){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile,new JoseV());
+        fragmentTransaction.commit();
+    }
+
+    private void showMila(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile,new Mila());
         fragmentTransaction.commit();
     }
 }
