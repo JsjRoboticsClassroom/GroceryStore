@@ -14,8 +14,10 @@ import nyc.c4q.grocerystore.R;
 class EmployeeListAdapter extends RecyclerView.Adapter{
 
     private List<EmployeeDescription> mData = Arrays.asList(
-        new EmployeeDescription("Ashique", R.drawable.ashique)
+        new EmployeeDescription("Ashique", R.drawable.ashique),
+        new EmployeeDescription("Nesada", R.drawable.nk)
     );
+
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
