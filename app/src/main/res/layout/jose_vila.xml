@@ -9,7 +9,7 @@
     android:background="@drawable/beachbg">
     <TextView
         android:id="@+id/image1"
-        android:background="@drawable/unnamed"
+        android:background="@drawable/josev"
         android:padding="20dp"
         android:layout_width="180sp"
         android:layout_height="180sp"
