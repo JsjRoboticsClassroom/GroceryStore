@@ -9,11 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import nyc.c4q.grocerystore.R;
 import nyc.c4q.grocerystore.employeeHandbook.employees.AndresFragment;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Ashique;
-import nyc.c4q.grocerystore.employeeHandbook.employees.Nesada;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Nesada;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Wesnie;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Jordan;
@@ -34,13 +34,6 @@ public class EmployeeView extends AppCompatActivity {
 if (employee.equals("JoseV")){
                  showJoseV();
 }
-
-
-            if (employee.equals("Nesada")){
-                showNesada();
-            }
-
-    }
 
             switch (employee) {
                 case "Lily":
@@ -70,11 +63,19 @@ if (employee.equals("JoseV")){
                 case "Jordan":
                     showJordan();
                     break;
-
+                case "Nesada":
+                    showNesada();
+                    break;
             }
 
         }
-
+    }
+    private void showNesada(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Nesada());
+        fragmentTransaction.commit();
+    }
 
     private void showJordan(){
         FragmentManager fragmentManager = getFragmentManager();
@@ -97,14 +98,7 @@ if (employee.equals("JoseV")){
     private void showAshique(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.employee_profile,new Ashique());
-        fragmentTransaction.commit();
-    }
-
-    private void showNesada() {
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.employee_profile, new Nesada());
+        fragmentTransaction.add(R.id.employee_profile, new Ashique());
         fragmentTransaction.commit();
     }
 
