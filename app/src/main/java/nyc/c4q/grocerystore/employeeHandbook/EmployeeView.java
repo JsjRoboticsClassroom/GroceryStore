@@ -19,7 +19,8 @@ public class EmployeeView extends AppCompatActivity {
         setContentView(R.layout.employee_view);
         String employee = getIntent().getStringExtra(EMPLOYEE_NAME);
         if(employee != null){
-            showMila();
+            if(employee.equalsIgnoreCase("Mila")){
+            showMila();}
         }
     }
 
