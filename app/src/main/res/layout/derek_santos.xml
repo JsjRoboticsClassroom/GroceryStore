@@ -15,7 +15,7 @@
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
-        android:src="@drawable/d_wreck" />
+        android:src="@drawable/derek" />
 
     <ImageView
         android:id="@+id/sportsteam1"

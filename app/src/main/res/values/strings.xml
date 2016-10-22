@@ -25,4 +25,6 @@
     <string name="jordans_nickname">Nickname: The World\'s Greatest</string>
     <string name="Bio">My name is Jordan Smith. I\'m the manager of the freezer section of JJ\'s Grocery Store. Here\'s a picture of a waffle. I like waffles.</string>
     <string name="jordans_name">Name:Jordan Smith</string>
+    <string name="Wesnies_Name">Wesnie</string>
+    <string name="select_an_employee">Select one of the %d employees</string>
 </resources>
