@@ -15,6 +15,7 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
 
     private List<EmployeeDescription> mData = Arrays.asList(
         new EmployeeDescription("Ashique", R.drawable.ashique),
+            new EmployeeDescription("Nesada", R.drawable.nk),
         new EmployeeDescription("Lily", R.drawable.hui),
         new EmployeeDescription("Hyunjoo", R.drawable.hyunjoo),
         new EmployeeDescription("Helen", R.drawable.helen),

@@ -13,6 +13,7 @@ import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Nesada;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Wesnie;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Jordan;
@@ -62,10 +63,18 @@ if (employee.equals("JoseV")){
                 case "Jordan":
                     showJordan();
                     break;
-
+                case "Nesada":
+                    showNesada();
+                    break;
             }
 
         }
+    }
+    private void showNesada(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Nesada());
+        fragmentTransaction.commit();
     }
 
     private void showJordan(){
