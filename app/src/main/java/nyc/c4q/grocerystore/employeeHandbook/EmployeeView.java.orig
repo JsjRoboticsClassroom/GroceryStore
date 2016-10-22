@@ -1,31 +1,36 @@
 package nyc.c4q.grocerystore.employeeHandbook;
 
+
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import nyc.c4q.grocerystore.R;
 import nyc.c4q.grocerystore.employeeHandbook.employees.AndresFragment;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Ashique;
+<<<<<<< HEAD
 import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Wesnie;
+=======
 import nyc.c4q.grocerystore.employeeHandbook.employees.Jordan;
+>>>>>>> c82da30bb4df7f26901f2718b7e5af987b41e04f
 
 public class EmployeeView extends AppCompatActivity {
     public static final String EMPLOYEE_NAME = "extra.employee.name";
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employee_view);
         String employee = getIntent().getStringExtra(EMPLOYEE_NAME);
+
         if(employee != null){
+<<<<<<< HEAD
             if (employee.equals("Danny")) {
                 showDanny();
             }
@@ -55,20 +60,21 @@ public class EmployeeView extends AppCompatActivity {
                 case "Andres":
                     showAndres();
                     break;
+
+            }
+
+=======
+            switch(employee){
+                case "Ashique":
+                    showAshique();
+                    break;
                 case "Jordan":
                     showJordan();
                     break;
 
             }
-
+>>>>>>> c82da30bb4df7f26901f2718b7e5af987b41e04f
         }
-    }
-
-    private void showJordan(){
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.employee_profile, new Jordan());
-        fragmentTransaction.commit();
     }
 
     private void showAndres(){
@@ -127,4 +133,13 @@ public class EmployeeView extends AppCompatActivity {
         fragmentTransaction.add(R.id.employee_profile, new Wesnie());
         fragmentTransaction.commit();
     }
+
+    private void showJordan(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile, new Jordan());
+        fragmentTransaction.commit();
+    }
+
+
 }
