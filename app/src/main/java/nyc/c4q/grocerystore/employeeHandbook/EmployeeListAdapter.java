@@ -51,6 +51,7 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
                 Intent intent = new Intent(view.getContext(), EmployeeView.class);
                 intent.putExtra(EmployeeView.EMPLOYEE_NAME, name);
                 view.getContext().startActivity(intent);
+
             }
         };
     }
