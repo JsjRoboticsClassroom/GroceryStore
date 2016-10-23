@@ -16,36 +16,36 @@
         android:maxHeight="200dp"
         />
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal">
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:layout_gravity="left"
-        android:id="@+id/joseg1"
-        android:src="@drawable/joseg"
-        android:adjustViewBounds="true"
-        android:maxWidth="150dp"
-        android:maxHeight="150dp"
-        />
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:scaleType="centerCrop"
-        android:layout_gravity="end"
-        android:id="@+id/turntable"
-        android:src="@drawable/turntable"
-        android:adjustViewBounds="true"
-        android:paddingLeft="30dp"
-        android:maxWidth="200dp"
-        android:maxHeight="100dp"
-        />
-    </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+  <ImageView
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:scaleType="centerCrop"
+      android:layout_gravity="left"
+      android:id="@+id/joseg1"
+      android:src="@drawable/joseg"
+      android:adjustViewBounds="true"
+      android:maxWidth="150dp"
+      android:maxHeight="150dp"
+      />
+  <ImageView
+      android:layout_width="200dp"
+      android:layout_height="100dp"
+      android:scaleType="centerCrop"
+      android:layout_gravity="end"
+      android:id="@+id/turntable"
+      android:src="@drawable/turntable"
+      android:adjustViewBounds="true"
+      android:paddingLeft="30dp"
+      android:maxWidth="200dp"
+      android:maxHeight="100dp"
+      />
+  </LinearLayout>
 
-    <TextView
+ <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textviewthree"
