@@ -28,7 +28,8 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
         new EmployeeDescription("JoseV", R.drawable.josev),
         new EmployeeDescription("Mila", R.drawable.mila),
         new EmployeeDescription("Jose G.", R.drawable.joseg),
-    new EmployeeDescription("Akasha", R.drawable.aa_profile_pic)
+    new EmployeeDescription("Akasha", R.drawable.aa_profile_pic),
+new EmployeeDescription("Yojana", R.drawable.yojana1)
 
 
     );
@@ -65,6 +66,7 @@ class EmployeeListAdapter extends RecyclerView.Adapter{
                 Intent intent = new Intent(view.getContext(), EmployeeView.class);
                 intent.putExtra(EmployeeView.EMPLOYEE_NAME, name);
                 view.getContext().startActivity(intent);
+
             }
         };
     }

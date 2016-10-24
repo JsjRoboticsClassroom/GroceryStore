@@ -10,44 +10,23 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/cat2">
+        android:background="@drawable/yojana1">
 
     </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:gravity="center"
-        android:textColor="#993333"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Hi, This is Yojana. I am From Nepal. I moved to USA almost three years ago. I joined this program because I want to create something SPECIAL"
+        android:text=" Hi, This is Yojana."
         android:textSize="30dp"
-        android:gravity="bottom"
-        android:textColor="#993333"/>
+        android:textColor="#000000"
+        android:paddingBottom="16dp"
+        android:id="@+id/textView5"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="199dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cat2"
-            android:layout_gravity="bottom"
-            android:id="@+id/imageView">
-
-        </ImageButton>
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cat"
-            android:layout_gravity="bottom"/>
-    </LinearLayout>
 </RelativeLayout>
