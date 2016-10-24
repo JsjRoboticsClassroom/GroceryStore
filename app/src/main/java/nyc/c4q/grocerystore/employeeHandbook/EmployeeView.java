@@ -22,6 +22,7 @@ import nyc.c4q.grocerystore.employeeHandbook.employees.Mila;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Joseg;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Akasha;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Yojana;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Taryn;
 
 
 public class EmployeeView extends AppCompatActivity {
@@ -83,7 +84,9 @@ public class EmployeeView extends AppCompatActivity {
                 case "Yojana":
                     showYojana();
                     break;
-
+                case "Taryn":
+                    showTaryn();
+                    break;
                 default:
                     break;
                 
@@ -196,6 +199,12 @@ public class EmployeeView extends AppCompatActivity {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile, new Yojana());
+        fragmentTransaction.commit();
+    }
+    private void showTaryn(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile,new Taryn());
         fragmentTransaction.commit();
     }
 }
