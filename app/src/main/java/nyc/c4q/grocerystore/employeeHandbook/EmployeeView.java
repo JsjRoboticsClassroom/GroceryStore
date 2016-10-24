@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import nyc.c4q.grocerystore.R;
 import nyc.c4q.grocerystore.employeeHandbook.employees.AndresFragment;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Ashique;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Cue;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Danny;
 import nyc.c4q.grocerystore.employeeHandbook.employees.HuiLily;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
@@ -87,6 +88,8 @@ public class EmployeeView extends AppCompatActivity {
                 case "Taryn":
                     showTaryn();
                     break;
+                case "Cue":
+                    showCue();
                 default:
                     break;
                 
@@ -205,6 +208,13 @@ public class EmployeeView extends AppCompatActivity {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.employee_profile,new Taryn());
+        fragmentTransaction.commit();
+    }
+
+    private void showCue(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile,new Cue());
         fragmentTransaction.commit();
     }
 }

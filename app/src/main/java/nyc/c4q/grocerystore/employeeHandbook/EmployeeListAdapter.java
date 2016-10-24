@@ -11,26 +11,27 @@ import java.util.List;
 import nyc.c4q.grocerystore.R;
 
 
-class EmployeeListAdapter extends RecyclerView.Adapter{
+class EmployeeListAdapter extends RecyclerView.Adapter {
 
     private List<EmployeeDescription> mData = Arrays.asList(
-        new EmployeeDescription("Ashique", R.drawable.ashique),
-        new EmployeeDescription("Nesada", R.drawable.nk),
-        new EmployeeDescription("Lily", R.drawable.hui),
-        new EmployeeDescription("Hyunjoo", R.drawable.hyunjoo),
-        new EmployeeDescription("Helen", R.drawable.helen),
-        new EmployeeDescription("Derek", R.drawable.derek),
-        new EmployeeDescription("Andres",R.drawable.andreas),
-        new EmployeeDescription("Danny", R.drawable.danny),
-        new EmployeeDescription("Rook", R.drawable.rooks),
-        new EmployeeDescription("Wesnie", R.drawable.wesnie),
-        new EmployeeDescription("Jordan", R.drawable.jordan),
-        new EmployeeDescription("JoseV", R.drawable.josev),
-        new EmployeeDescription("Mila", R.drawable.mila),
-        new EmployeeDescription("Jose G.", R.drawable.joseg),
-    new EmployeeDescription("Akasha", R.drawable.aa_profile_pic),
-new EmployeeDescription("Yojana", R.drawable.yojana1),
-new EmployeeDescription("Taryn", R.drawable.taryn_selfie)
+            new EmployeeDescription("Ashique", R.drawable.ashique),
+            new EmployeeDescription("Nesada", R.drawable.nk),
+            new EmployeeDescription("Lily", R.drawable.hui),
+            new EmployeeDescription("Hyunjoo", R.drawable.hyunjoo),
+            new EmployeeDescription("Helen", R.drawable.helen),
+            new EmployeeDescription("Derek", R.drawable.derek),
+            new EmployeeDescription("Andres", R.drawable.andreas),
+            new EmployeeDescription("Danny", R.drawable.danny),
+            new EmployeeDescription("Rook", R.drawable.rooks),
+            new EmployeeDescription("Wesnie", R.drawable.wesnie),
+            new EmployeeDescription("Jordan", R.drawable.jordan),
+            new EmployeeDescription("JoseV", R.drawable.josev),
+            new EmployeeDescription("Mila", R.drawable.mila),
+            new EmployeeDescription("Jose G.", R.drawable.joseg),
+            new EmployeeDescription("Akasha", R.drawable.aa_profile_pic),
+            new EmployeeDescription("Yojana", R.drawable.yojana1),
+            new EmployeeDescription("Taryn", R.drawable.taryn_selfie),
+            new EmployeeDescription("Cue", R.drawable.cueforfranklin)
 
 
     );
@@ -49,7 +50,7 @@ new EmployeeDescription("Taryn", R.drawable.taryn_selfie)
     }
 
     private View.OnClickListener buildEmployeeClickListener(EmployeeDescription employee) {
-        if (employee != null){
+        if (employee != null) {
             return navigateToEmployeeViewListener(employee.getName());
         }
         return defaultClickListener();
@@ -57,6 +58,7 @@ new EmployeeDescription("Taryn", R.drawable.taryn_selfie)
 
     /**
      * This click listener launches an intent with the employee name as an extra
+     *
      * @param name
      * @return
      */
