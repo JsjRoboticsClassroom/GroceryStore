@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layoutheader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Employees"
+            android:gravity="bottom"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:layout_marginRight="0dp"
+            android:background="#bfbfbf"
+            android:textStyle="italic"
+            android:textColor="#0C3C53"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:orientation="vertical"
+        android:background="#f2f2f2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imagesecond"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rli_image_self2"
+                />
+            <ImageView
+                android:id="@+id/imagethird"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/imagesecond"
+                android:src="@drawable/rli_image_header"
+                android:scaleType="fitXY"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            >
+
+            <ImageView
+                android:id="@+id/imagemain"
+                android:padding="10dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rli_image_self1"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/textnickname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@id/imagemain"
+                android:layout_alignParentBottom="true"
+                android:text="Woody"
+                android:textAlignment="textEnd"
+                android:textColor="#0C3C53"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@id/imagemain"
+                android:layout_above="@id/textnickname"
+                android:text="Li, Rusi"
+                android:textSize="25sp"
+                android:textAlignment="textEnd"
+                android:textColor="#0C3C53"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layoutbio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:background="#bfbfbf">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textColor="#0C3C53"
+            android:text="         Born in Tianjin, China on May 15th, in 1989. Moved here to New York at the tender age of 1 to follow my father's job. First and greatest passion will always be any and everything automotive. Computers follow at a (distant) second, but don't tell C4Q. Shh."
+            />
+
+    </LinearLayout>
+</LinearLayout>

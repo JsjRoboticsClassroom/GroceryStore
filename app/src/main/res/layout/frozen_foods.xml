@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation ="vertical"
+    android:background="@drawable/freezer"
+    android:paddingRight ="20dp"
+    android:paddingLeft="10dp"
+    >
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="50sp"-->
+        <!--android:text="Frozen Foods"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#0067B5"-->
+        <!--android:layout_gravity="center" />-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frozenfoods2"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#FF0000FF"
+        android:paddingTop="10dp"
+        android:text="Choose one:"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation = "horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="150dp"
+            android:layout_gravity="left"
+            android:src="@drawable/eggos"
+            android:id="@+id/eggos1"
+             />
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bagelbites1"
+            android:src="@drawable/bagelbites"
+             />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pizzarolls"
+            android:id="@+id/pizzarolls1"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation = "horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="150dp"
+            android:layout_gravity="left"
+            android:src="@drawable/eggos"
+            android:id="@+id/eggos2"
+            />
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bagelbites2"
+            android:src="@drawable/bagelbites"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pizzarolls"
+            android:id="@+id/pizzarolls2"
+           />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation = "horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="150dp"
+            android:layout_gravity="left"
+            android:src="@drawable/eggos"
+            android:id="@+id/eggos3"
+            />
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bagelbites3"
+            android:src="@drawable/bagelbites"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pizzarolls"
+            android:id="@+id/pizzarolls3"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight ="20dp"
+        android:paddingLeft ="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textSize="30sp"
+            android:text = "checkout"
+            android:background="#755F9EA0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text = "cart"
+            android:layout_marginLeft="60dp"
+            android:background="#755F9EA0" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="store_menu_button_size">120dp</dimen>
+    <dimen name="large_text_size">25sp</dimen>
+    <dimen name="normal_text_size">20sp</dimen>
+    <dimen name="flashing_board_row_height">20dp</dimen>
+    <dimen name="flashing_board_item_width">80dp</dimen>
+    <dimen name="small_image_size">100dp</dimen>
+</resources>

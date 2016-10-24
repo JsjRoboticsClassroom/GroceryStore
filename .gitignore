@@ -1,4 +1,18 @@
+<<<<<<< HEAD
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.idea/misc.xml
+.idea/vcs.xml
+.idea/
+=======
 .DS_Store
 out/
 .idea/
 *.class
+>>>>>>> f65afd48d6a35cc3dd48a7d1be184d2c702667fb

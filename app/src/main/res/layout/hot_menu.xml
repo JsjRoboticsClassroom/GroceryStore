@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotbar_menu"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        android:background="#8f2b2b"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Menu Options"
+            android:textColor="#fff"
+            android:textSize="50sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Food1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/leftIcon1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageFood1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hotmenu__chicken"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFood1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Chicken"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_weight="33"/>
+
+            <Spinner
+                android:id="@+id/listviewFlavor1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33">
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:text="-"/>
+
+                <TextView
+                    android:id="@+id/textCount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:text="#"/>
+
+                <Button
+                    android:id="@+id/buttonPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPrice1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="$Price"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/buttonAdd1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add to Cart"
+                android:layout_weight="50"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Food2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25">
+
+        <LinearLayout
+            android:id="@+id/leftIcon2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageFood2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hotmenu__sweetpot"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFood2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="SweetPotatoes"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_weight="33"/>
+
+            <Spinner
+                android:id="@+id/listviewFlavor2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33">
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonMinus2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:text="-"/>
+
+                <TextView
+                    android:id="@+id/textCount2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:text="#"/>
+
+                <Button
+                    android:id="@+id/buttonPlus2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPrice2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="$Price"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/buttonAdd2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add to Cart"
+                android:layout_weight="50"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Food3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25">
+
+        <LinearLayout
+            android:id="@+id/leftIcon3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageFood3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hotmenu__wings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFood3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Hot Wings"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_weight="33"/>
+
+            <Spinner
+                android:id="@+id/listviewFlavor3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33">
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonMinus3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:text="-"/>
+
+                <TextView
+                    android:id="@+id/textCount3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:text="#"/>
+
+                <Button
+                    android:id="@+id/buttonPlus3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPrice3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="$Price"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/buttonAdd3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add to Cart"
+                android:layout_weight="50"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Food4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+        <Button
+            android:id="@+id/hotmenu_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="Checkout"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

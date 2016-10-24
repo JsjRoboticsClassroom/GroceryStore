@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hyunjoo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/mycolor"
+    >
+
+    <ImageView
+        android:id ="@+id/myface"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/hyunjoo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:text= "I enjoy watching movies and collecting movie tickets. I also enjoy riding my citizan bike, the one with the small wheels. On my spare time I take it around the city. My favorite color is blue. "
+        android:textColor="#dedede"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textbelow"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/movie_7001c"
+        android:layout_alignBottom="@+id/imageView4"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/textbelow"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <ViewAnimator
+        android:id="@+id/imageView4"
+        android:animateFirstView="true"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:background="@drawable/giphy"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textbelow"
+        android:layout_alignStart="@+id/textbelow" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hyunjoo"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/myface"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" aka Hyunjoo"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text"
+        android:layout_alignRight="@+id/text"
+        android:layout_alignEnd="@+id/text" />
+
+
+</RelativeLayout>
